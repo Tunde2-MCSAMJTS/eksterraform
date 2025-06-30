@@ -8,10 +8,10 @@ variable "cluster-name" {
   type    = string
 }
 variable "key_pair_name" {
-  default = "tspcloud"
+  default = "bestpemkey3"
 }
 variable "eks_node_instance_type" {
-  default = "t2.micro"
+  default = "t3.medium"
 }
 
 variable "environment" {
