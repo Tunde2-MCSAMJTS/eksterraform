@@ -1,21 +1,15 @@
-variable "ecr_name" {
-  description = "The list of ecr names to create"
-  type        = list(string)
-  default     = null
-}
-variable "tags" {
-  description = "The key-value maps for tagging"
-  type        = map(string)
-  default     = {}
-}
-variable "image_mutability" {
-  description = "Provide image mutability"
-  type        = string
-  default     = "MUTABLE"
+type        = string
+  description = "AWS region"
 }
 
-variable "encrypt_type" {
-  description = "Provide type of encryption here"
+variable "cluster_name" {
   type        = string
-  default     = "KMS"
+  description = "EKS cluster name to connect to"
 }
+
+# ───────────────────────────────
+# argocd-values.yaml (sample)
+# ───────────────────────────────
+# server:
+#   service:
+#     type: LoadBalancer
