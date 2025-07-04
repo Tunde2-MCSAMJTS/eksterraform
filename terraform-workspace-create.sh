@@ -3,7 +3,7 @@ terraform workspace new staging
 terraform workspace new prod
 
 
-#to initialize and deploy per env
+# to initialize and  deploy per env
 # terraform init
 # terraform workspace select dev
 # terraform plan -var-file="env/dev.tfvars"
